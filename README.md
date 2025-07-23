@@ -59,3 +59,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Prerequisites
+
+Local DB
+Laravel, Composer, PHP > 8 to be installed properly
+
+## Steps
+1. Clone the repo
+2. Connect your db in .env
+3. Open a terminal and type **php artisan serve**
+4. Go to **http://127.0.0.1:8000/product**
+
+
+
+
+   
