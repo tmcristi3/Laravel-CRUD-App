@@ -6,7 +6,7 @@
   <title>Edit Product</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 flex items-center justify-center p-6">
+<body class="min-h-screen bg-gradient-to-br from-gray-200 via-gray-300 to-gray-600 flex items-center justify-center p-6">
   <div class="bg-white/30 backdrop-blur-md border border-white/40 rounded-xl shadow-lg max-w-md w-full p-8">
     <div class="w-full max-w-xl mb-6">
       <a href="{{ route('product.showAll') }}"

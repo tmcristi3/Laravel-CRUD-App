@@ -6,7 +6,7 @@
   <title>The list of products</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 flex items-center justify-center p-6">
+<body class="min-h-screen bg-gradient-to-br from-gray-200 via-gray-300 to-gray-600 flex items-center justify-center p-6">
   </div>
   <div class="bg-white/30 backdrop-blur-md border border-white/40 rounded-xl shadow-lg w-full max-w-5xl p-8">
     <div class="mb-4">
@@ -26,7 +26,7 @@
 
     <div class="overflow-x-auto">
       <table class="min-w-full bg-white/40 backdrop-blur-sm shadow-inner">
-        <thead class="bg-blue-300 text-gray-900">
+        <thead class="bg-blue-500 text-gray-900">
           <tr>
             <th class="text-left py-3 px-4">ID</th>
             <th class="text-left py-3 px-4">Name</th>

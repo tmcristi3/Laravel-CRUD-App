@@ -13,6 +13,7 @@ class Produse extends Model
         'name',
         'quantity',
         'price',
-        'description'
+        'description',
+        'user_id'
     ];
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Produse;
+use Illuminate\Support\Facades\Auth;
 
 class ControllerDeProduse extends Controller
 {
@@ -20,20 +21,24 @@ class ControllerDeProduse extends Controller
     $data = $request->validate([
         'name' => 'required',
         'quantity' => 'required|numeric',
-        'price' => 'required|numeric', // numeric
+        'price' => 'required|numeric',
         'description' => 'required',
     ]);
 
-    \App\Models\Produse::create($data);
+    $data['user_id'] = Auth::id(); // attach produsului user_id-ul userului curent
+
+    Produse::create($data); // creaza produs
 
     return redirect()->route('product.index');
     }
 
     //sa ne arate tot din db in tabel
     public function showAll() {
-    $products = Produse::all(); // ia toate produsele din tabela
+    $userId = Auth::id(); // ia userul logat
+    $products = Produse::where('user_id', $userId)->get(); // doar produsele lui
+
     return view('Produse.showAll', compact('products'));
-    }
+}
 
     // functia de edit
     public function edit($id) {
